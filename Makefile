@@ -6,7 +6,9 @@ build:
 	cd external/zenoh-plugin-dds && cargo build --release -p zenoh-bridge-dds
 	cd external/zenoh_carla_bridge && cargo build --release
 	cd external/zenoh_carla_bridge/carla_agent && poetry install --no-root
-	colcon build --symlink-install --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+	# colcon build --symlink-install --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+	colcon build
+
 
 prepare:
 	# Install dependencies

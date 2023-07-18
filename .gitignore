@@ -7,3 +7,5 @@ log
 rust
 poetry
 pyenv
+.vscode
+.vscode/settings.json

@@ -1,0 +1,50 @@
+vehicle1_commander:  # Name of your Node
+  ros__parameters:
+    init_pos_x: 86.395
+    init_pos_y: -15.0
+    init_pos_z: 0.0
+    init_rot_x: 0.0
+    init_rot_y: 0.0
+    init_rot_z: -0.7072
+    init_rot_w: 0.7072
+    goal_pos_x: 396.413
+    goal_pos_y: -16.05
+    goal_pos_z: 0.0
+    goal_rot_x: 0.0
+    goal_rot_y: 0.0
+    goal_rot_z: 0.7072
+    goal_rot_w: 0.7072
+
+vehicle2_commander:  # Name of your Node
+  ros__parameters:
+    init_pos_x: 86.395
+    init_pos_y: -40.0
+    init_pos_z: 0.0
+    init_rot_x: 0.0
+    init_rot_y: 0.0
+    init_rot_z: -0.7072
+    init_rot_w: 0.7072
+    goal_pos_x: 396.413
+    goal_pos_y: -16.05
+    goal_pos_z: 0.0
+    goal_rot_x: 0.0
+    goal_rot_y: 0.0
+    goal_rot_z: 0.7072
+    goal_rot_w: 0.7072
+
+vehicle3_commander:  # Name of your Node
+  ros__parameters:
+    init_pos_x: 86.395
+    init_pos_y: -40.0
+    init_pos_z: 0.0
+    init_rot_x: 0.0
+    init_rot_y: 0.0
+    init_rot_z: -0.7072
+    init_rot_w: 0.7072
+    goal_pos_x: 396.413
+    goal_pos_y: -16.05
+    goal_pos_z: 0.0
+    goal_rot_x: 0.0
+    goal_rot_y: 0.0
+    goal_rot_z: 0.7072
+    goal_rot_w: 0.7072

@@ -30,7 +30,7 @@ export CARLA_SIMULATOR_IP=127.0.0.1
 
 
 # Export Map path
-export CARLA_MAP_NAME="Town02"
+export CARLA_MAP_NAME="Town01"
 export CARLA_MAP_PATH=${AUTOWARE_CARLA_ROOT}/carla_map/${CARLA_MAP_NAME}
 
 

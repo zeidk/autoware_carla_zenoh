@@ -5,8 +5,20 @@ export AUTOWARE_CARLA_ROOT=`dirname ${ENV_PATH}`
 
 # Source workspace
 shell=`cat /proc/$$/cmdline | tr -d '\0' | tr -d '-'`
-if [ -f ${AUTOWARE_CARLA_ROOT}/install/setup.${shell} ]; then
-    source ${AUTOWARE_CARLA_ROOT}/install/setup.${shell}
+
+# if shell is bash or zsh, then source setup.bash or setup.zsh
+if [ ${shell} = "/usr/bin/bash" ]; then
+    if [ -f ${AUTOWARE_CARLA_ROOT}/install/setup.bash ]; then
+        # echo "Sourcing ${AUTOWARE_CARLA_ROOT}/install/setup.bash ..."
+        source ${AUTOWARE_CARLA_ROOT}/install/setup.bash
+    fi
+fi
+
+if [ ${shell} = "/usr/bin/zsh" ]; then
+    if [ -f ${AUTOWARE_CARLA_ROOT}/install/setup.zsh ]; then
+        # echo "Sourcing ${AUTOWARE_CARLA_ROOT}/install/setup.zsh ..."
+        source ${AUTOWARE_CARLA_ROOT}/install/setup.zsh
+    fi
 fi
 
 # Export the config of zenoh-bridge-dds
@@ -18,7 +30,7 @@ export CARLA_SIMULATOR_IP=127.0.0.1
 
 
 # Export Map path
-export CARLA_MAP_NAME="Town01"
+export CARLA_MAP_NAME="Town02"
 export CARLA_MAP_PATH=${AUTOWARE_CARLA_ROOT}/carla_map/${CARLA_MAP_NAME}
 
 

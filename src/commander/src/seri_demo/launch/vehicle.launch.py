@@ -45,4 +45,6 @@ def generate_launch_description():
     )
 
     ld.add_action(gotogoal_v1)
+    ld.add_action(gotogoal_v2)
+    ld.add_action(gotogoal_v3)
     return ld

@@ -212,14 +212,15 @@ class VehicleCommander(Node):
         pose = PoseStamped()
         pose.header.stamp = self.get_clock().now().to_msg()
         pose.header.frame_id = 'map'
-        pose.pose.position.x = 86.395
-        pose.pose.position.y = -300.0
+        pose.pose.position.x = 396.413
+        pose.pose.position.y = -16.05
         pose.pose.position.z = 0.0
         pose.pose.orientation.x = 0.0
         pose.pose.orientation.y = 0.0
-        pose.pose.orientation.z = -0.7072
+        pose.pose.orientation.z = 0.7072
         pose.pose.orientation.w = 0.7072
-
+    
+    
         # Publish the PoseStamped message
         self.publisher_goal_pose.publish(pose)
         self.get_logger().info(f'Published mission plan for {self._vehicle_name}')
